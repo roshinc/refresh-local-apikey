@@ -2,22 +2,62 @@ package dev.roshin.refresh;
 
 // Class representing an application
 class App {
-    String appName;
-    String appType;
-    String desc;
-    String product;
-    String updated;
-    String updatedBy;
+    private String appName;
+    private String appType;
+    private String desc;
+    private String product;
+    private String updated;
+    private String updatedBy;
 
     // Default constructor for Gson
-    public App() {}
+    public App() {
+    }
 
-    public App(String appName, String appType, String desc, String product, String updated, String updatedBy) {
+    public String getAppName() {
+        return appName;
+    }
+
+    public void setAppName(String appName) {
         this.appName = appName;
+    }
+
+    public String getAppType() {
+        return appType;
+    }
+
+    public void setAppType(String appType) {
         this.appType = appType;
+    }
+
+    public String getDesc() {
+        return desc;
+    }
+
+    public void setDesc(String desc) {
         this.desc = desc;
+    }
+
+    public String getProduct() {
+        return product;
+    }
+
+    public void setProduct(String product) {
         this.product = product;
+    }
+
+    public String getUpdated() {
+        return updated;
+    }
+
+    public void setUpdated(String updated) {
         this.updated = updated;
+    }
+
+    public String getUpdatedBy() {
+        return updatedBy;
+    }
+
+    public void setUpdatedBy(String updatedBy) {
         this.updatedBy = updatedBy;
     }
 }
